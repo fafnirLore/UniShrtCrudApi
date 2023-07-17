@@ -10,6 +10,7 @@ import * as dotenv from 'dotenv';
 import { JWT_KEY } from 'src/utils/constants';
 
 dotenv.config();
+
 @Injectable()
 export class JwtAuthGuard implements CanActivate {
   canActivate(context: ExecutionContext) {
